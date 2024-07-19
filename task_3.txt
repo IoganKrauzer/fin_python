@@ -1,0 +1,4 @@
+INFO:__main__:gues_number = 1; result: Win
+ERROR:root:invalid literal for int() with base 10: 'fdgd'
+ERROR:root:invalid literal for int() with base 10: 'fdgd'
+INFO:__main__:gues_number = 87; result: Loose
