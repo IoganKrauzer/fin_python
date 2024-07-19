@@ -2,3 +2,8 @@ INFO:__main__:gues_number = 1; result: Win
 ERROR:root:invalid literal for int() with base 10: 'fdgd'
 ERROR:root:invalid literal for int() with base 10: 'fdgd'
 INFO:__main__:gues_number = 87; result: Loose
+INFO:__main__:gues_number = 15; result: Loose
+INFO:__main__:gues_number = 6; result: Win
+INFO:__main__:gues_number = 4; result: Win Ответы: [4]
+INFO:__main__:gues_number = 3; result: Loose Ответы игрока: [1, 9, 6, 5, 43]
+INFO:__main__:Игрок: Kirra gues_number = 10; result: Loose Ответы игрока: [1, 8, 6, 59, 9]
