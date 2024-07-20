@@ -17,3 +17,17 @@ ERROR:__main__:can only concatenate str (not "int") to str
 ERROR:__main__:can only concatenate str (not "int") to str
 ERROR:__main__:Программа принимает только целочисленные цифры. Вы ввели: Namespace(start='dfgdf', stop='9', count='4') 
 ERROR:__main__:Один из переданных вами параметров не является целочисленным числом Вы ввели: Namespace(start='dfgdf', stop='9', count='4') 
+ERROR:__main__:Один из переданных вами параметров не является целочисленным числом Вы ввели: Namespace(start='1', stop='10', count='5') 
+ERROR:__main__:Один из переданных вами параметров не является целочисленным числом Вы ввели: Namespace(start='1', stop='10', count='5') 
+ERROR:__main__:Надо ввести целочисленное число
+ERROR:__main__:Надо ввести целочисленное число
+ERROR:__main__:Надо ввести целочисленное число
+ERROR:__main__:Надо ввести целочисленное число
+INFO:__main__:Игрок: Помогите Загаданное число: 6 | result: Loose | Ответы игрока: [3, 3, 3, 3, 3] | Параметры игры: Namespace(start=1, stop=10, count=5, player_name='Помогите', check_num=3)
+ERROR:__main__:dfsdfs ввел Namespace(start=1, stop=10, count=5, player_name='dfsdfs')
+ERROR:__main__:dfsdfs ввел Namespace(start=1, stop=10, count=5, player_name='dfsdfs', check_num=3)
+ERROR:__main__:dfsdfs ввел Namespace(start=1, stop=10, count=5, player_name='dfsdfs', check_num=3)
+ERROR:__main__:dfsdfs ввел Namespace(start=1, stop=10, count=5, player_name='dfsdfs', check_num=3)
+INFO:__main__:Игрок: dfsdfs Загаданное число: 2 | result: Win | Ответы игрока: [3, 12, 4, 2] | Параметры игры: Namespace(start=1, stop=10, count=5, player_name='dfsdfs', check_num=2)
+ERROR:__main__:Spasute ввел Namespace(start=1, stop=10, count=5, player_name='Spasute', check_num='sdfs')
+INFO:__main__:Игрок: Spasute Загаданное число: 6 | result: Win | Ответы игрока: ['sdfs', '2', 2, '5', 5, '7', 7, '6', 6] | Параметры игры: Namespace(start=1, stop=10, count=5, player_name='Spasute', check_num=6)
