@@ -8,12 +8,16 @@ import logging
 пользователем чисел до наибольшего включительно.
 """
 import logging
-from sys import argv
+import argparse
 
 
-def create_dict_for_chr_ord():
-    start, stop = sorted(map(int, numbers))
-    print(start, stop)
+def create_dict_for_chr_ord(numbers_):
+    start, stop = sorted(numbers_)
+    if stop - start > RANGE_BORDER:
+        logger.error('Вы превысили заданный диапазон')
+        return 0
+    logger_text = f'Пользователь {args.user} задал диапазон от {start} до {stop}'
+    logger.info(logger_text)
     return {chr(i): i for i in range(start, stop + 1)}
 
 
@@ -22,26 +26,17 @@ def show_dict(dict_):
         print(f'{items} = {value}')
 
 
-def check_numbers(numb):
-    try:
-        list(map(int, numb))
-        logger_text = f'{numb = }; {type(numb)}'
-        logger.info(logger_text)
-    except ValueError as e:
-        logger.error(e)
-
-
 if __name__ == '__main__':
-
-    FORMAT = '{levelname:<8} - {asctime}. В модуле "{name}" ' \
-             '\nв строке {lineno:03d} функция "{funcName}()" ' \
-             '\nв {created} секунд записала сообщение: {msg}\n\n'
-
     logger = logging.getLogger(__name__)
-    logging.basicConfig(filename='task_1.txt', filemode='a', encoding='utf-8', level=logging.INFO, format=FORMAT,
-                        style='{')
+    logging.basicConfig(filename='task_1.txt', filemode='a', encoding='utf-8', level=logging.INFO)
+    RANGE_BORDER = 75
+    def_num = [65, 122]
+    parser = argparse.ArgumentParser(
+        'Пользователь передает два параметра. Программа создает словарь. '
+        'Ключом является символ в Unicode, а значением его число в Unicode')
+    parser.add_argument('-u', '--user', help='имя пользователя', type=str, default='User')
+    parser.add_argument('-n', '--numbers', nargs='+', help='введите два числа', default=def_num,
+                        type=int)
 
-    numbers = argv[1:]
-    print(numbers)
-    check_numbers(numbers)
-    show_dict(create_dict_for_chr_ord())
+    args = parser.parse_args()
+    show_dict(create_dict_for_chr_ord(args.numbers))
