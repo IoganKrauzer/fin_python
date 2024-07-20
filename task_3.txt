@@ -31,3 +31,12 @@ ERROR:__main__:dfsdfs ввел Namespace(start=1, stop=10, count=5, player_name=
 INFO:__main__:Игрок: dfsdfs Загаданное число: 2 | result: Win | Ответы игрока: [3, 12, 4, 2] | Параметры игры: Namespace(start=1, stop=10, count=5, player_name='dfsdfs', check_num=2)
 ERROR:__main__:Spasute ввел Namespace(start=1, stop=10, count=5, player_name='Spasute', check_num='sdfs')
 INFO:__main__:Игрок: Spasute Загаданное число: 6 | result: Win | Ответы игрока: ['sdfs', '2', 2, '5', 5, '7', 7, '6', 6] | Параметры игры: Namespace(start=1, stop=10, count=5, player_name='Spasute', check_num=6)
+INFO:__main__:Игрок: Petya Загаданное число: 9 | result: Loose | Ответы игрока: ['2', 2, '5', 5, '8', 8] | Параметры игры: Namespace(start=1, stop=10, count=3, player_name='Petya', check_num=8)
+ERROR:__main__:P ввел Namespace(start=1, stop=10, count=3, player_name='P', check_num='gf')
+ERROR:__main__:P ввел Namespace(start=1, stop=10, count=3, player_name='P', check_num='fgh')
+INFO:__main__:Игрок: P Загаданное число: 7 | result: Win | Ответы игрока: {'8', 'gf', 6, 'fgh', 8, 7, '7', '6'} | Параметры игры: Namespace(start=1, stop=10, count=3, player_name='P', check_num=7)
+ERROR:__main__:Fra ввел Namespace(start=1, stop=10, count=10, player_name='Fra', check_num='gff')
+ERROR:__main__:Fra ввел Namespace(start=1, stop=10, count=10, player_name='Fra', check_num='hjkgjg')
+INFO:__main__:Игрок: Fra Загаданное число: 4 | result: Win | Ответы игрока: ['5', 'gff', 'hjkgjg', '5', '2', '3', '5', '4'] | Параметры игры: Namespace(start=1, stop=10, count=10, player_name='Fra', check_num=4)
+ERROR:__main__:Try_1000 ввел ghjg
+INFO:__main__:Игрок: Try_1000 Загаданное число: 7 | result: Win | Ответы игрока: ['6', 'ghjg', '8', '7'] | Параметры игры: Namespace(start=1, stop=10, count=10, player_name='Try_1000', check_num=7)
