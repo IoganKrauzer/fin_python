@@ -40,3 +40,6 @@ ERROR:__main__:Fra ввел Namespace(start=1, stop=10, count=10, player_name='F
 INFO:__main__:Игрок: Fra Загаданное число: 4 | result: Win | Ответы игрока: ['5', 'gff', 'hjkgjg', '5', '2', '3', '5', '4'] | Параметры игры: Namespace(start=1, stop=10, count=10, player_name='Fra', check_num=4)
 ERROR:__main__:Try_1000 ввел ghjg
 INFO:__main__:Игрок: Try_1000 Загаданное число: 7 | result: Win | Ответы игрока: ['6', 'ghjg', '8', '7'] | Параметры игры: Namespace(start=1, stop=10, count=10, player_name='Try_1000', check_num=7)
+ERROR:__main__:User ввел dsfs
+INFO:__main__:Игрок: User | Загаданное число: 3 | result: Loose | Ответы игрока: ['dsfs', '10', '5', '2'] | Параметры игры: Namespace(name='User', start=1, stop=10, count=3, check_num=2)
+INFO:__main__:Игрок: NamerNam | Загаданное число: 4 | result: Win | Ответы игрока: ['5', '4'] | Параметры игры: Namespace(name='NamerNam', start=1, stop=10, count=5, check_num=4)

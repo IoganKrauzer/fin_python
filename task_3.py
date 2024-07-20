@@ -17,22 +17,21 @@ import argparse
 def find_func(start, stop, count):
     gues_number = rnd(start, stop)
     lst_pl_answers = []
-    args.player_name = input('Введите имя игрока: ')
     for k in range(1, count + 1):
         while True:
             try:
                 args.check_num = input('Введите число для угадывания: ')
                 lst_pl_answers.append(args.check_num)
-                args.check_num = int(args.check_num )
+                args.check_num = int(args.check_num)
                 break
             except ValueError:
-                print(f'{args.player_name}, надо ввести целочисленное число')
-                logger.error(f'{args.player_name} ввел {args.check_num}')
+                print(f'{args.name}, надо ввести целочисленное число')
+                logger.error(f'{args.name} ввел {args.check_num}')
 
         if args.check_num == gues_number:
             print('Угадали!')
             print(gues_number)
-            logger_text = f'Игрок: {args.player_name} | Загаданное число: {gues_number} | '\
+            logger_text = f'Игрок: {args.name} | Загаданное число: {gues_number} | '\
                           f'result: Win | Ответы игрока: {lst_pl_answers} | Параметры игры: {args}'
             logger.info(logger_text)
             return True
@@ -45,7 +44,7 @@ def find_func(start, stop, count):
     else:
         print('Вы исчерпали все попытки!')
         print(f'Загаданное число: {gues_number}!')
-        logger_text = f'Игрок: {args.player_name} | Загаданное число: {gues_number} | ' \
+        logger_text = f'Игрок: {args.name} | Загаданное число: {gues_number} | ' \
                       f'result: Loose | Ответы игрока: {lst_pl_answers} | Параметры игры: {args}'
         logger.info(logger_text)
         return False
@@ -57,6 +56,7 @@ if __name__ == '__main__':
 
     parser = argparse.ArgumentParser(
         description='Создается диапазон чисел для игры "Угадайка" и количество попыток')
+    parser.add_argument('-n', '--name', help='Имя игрока', type=str, default='User')
     parser.add_argument('-s', '--start', help='Нижняя граница', type=int, default=1)
     parser.add_argument('-f', '--stop', help='Верхняя граница ', type=int, default=10)
     parser.add_argument('-c', '--count', help='Количество попыток', type=int, default=3)
