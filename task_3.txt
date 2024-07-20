@@ -7,3 +7,13 @@ INFO:__main__:gues_number = 6; result: Win
 INFO:__main__:gues_number = 4; result: Win Ответы: [4]
 INFO:__main__:gues_number = 3; result: Loose Ответы игрока: [1, 9, 6, 5, 43]
 INFO:__main__:Игрок: Kirra gues_number = 10; result: Loose Ответы игрока: [1, 8, 6, 59, 9]
+INFO:__main__:Игрок: Petya gues_number = 1; result: Win Ответы: [3, 5, 7, 2, 1]
+INFO:__main__:Игрок: gh Загаданное число: gues_number = 6;             result: Win Ответы: [4, 7, 6]
+INFO:__main__:Игрок: Petya2 Загаданное число: 6;             result: Win | Ответы: [7, 4, 6] | Параметры игры: Namespace(start=1, stop=10, count=5, player_name='Petya2', check_num=6)
+INFO:__main__:Игрок: Vasya Загаданное число: 9 | result: Win | Ответы игрока: [3, 5, 7, 9] | Параметры игры: Namespace(start=1, stop=10, count=5, player_name='Vasya', check_num=9)
+INFO:__main__:Игрок: ПустьВСёРаботает Загаданное число: 9 | result: Loose | Ответы игрока: [3, 2, 1, 4, 3] | Параметры игры: Namespace(start=1, stop=10, count=5, player_name='ПустьВСёРаботает', check_num=3)
+ERROR:__main__:can only concatenate str (not "int") to str
+ERROR:__main__:can only concatenate str (not "int") to str
+ERROR:__main__:can only concatenate str (not "int") to str
+ERROR:__main__:Программа принимает только целочисленные цифры. Вы ввели: Namespace(start='dfgdf', stop='9', count='4') 
+ERROR:__main__:Один из переданных вами параметров не является целочисленным числом Вы ввели: Namespace(start='dfgdf', stop='9', count='4') 
